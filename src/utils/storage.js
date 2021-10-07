@@ -11,14 +11,14 @@ export async function saveMovie(key, newMovie){
     const hasMovie = moviesStored.some( item => item.id === newMovie.id);
 
     if(hasMovie){
-        console.log("ESSE FILME JÁ EXISTE NA SUA LISTA");
+ //       console.log("ESSE FILME JÁ EXISTE NA SUA LISTA");
         return;
     }
 
     moviesStored.push(newMovie);
 
     await AsyncStorage.setItem(key, JSON.stringify(moviesStored));
-    console.log("FILME SALVO COM SUCESSO!");
+ //   console.log("FILME SALVO COM SUCESSO!");
 }
 
 export async function deleteMovie(id){
@@ -28,7 +28,7 @@ export async function deleteMovie(id){
     })
 
     await AsyncStorage.setItem('@primereact', JSON.stringify(myMovies));
-    console.log("FILME DELETADO COM SUCESSO!");
+//    console.log("FILME DELETADO COM SUCESSO!");
     return myMovies;
 }
 

@@ -75,11 +75,9 @@ function Detail(){
         if(favoritedMovie){
             await deleteMovie(movie.id);
             setFavoritedMovie(false);
-            alert('Filme removido da sua lista');
         }else{
             await saveMovie('@primereact', movie);
             setFavoritedMovie(true);
-            alert('Filme salvo na sua lista')
         }
 
     }
