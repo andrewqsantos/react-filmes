@@ -124,10 +124,10 @@ function Detail(){
             </ScrollView>
 
             <Modal animationType="slide" transparent={true} visible={openLink}>
-                <ModalLink
-                link={movie?.homepage}
-                title={movie?.title}
-                closeModal={ () => setOpenLink(false) }
+                <ModalLink 
+                    link={movie?.homepage}
+                    title={movie?.title}
+                    closeModal={ () => setOpenLink(false) }
                 />
             </Modal>
 
