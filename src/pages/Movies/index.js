@@ -1,11 +1,13 @@
 import React from 'react';
 import { View, Text } from 'react-native';
+import { Header } from '../../components/Header';
 
 function Movies(){
     return(
-        <View>
-            <Text>TELA MEUS FILMES</Text>
-        </View>
+        <Container>
+            <Header title="Meus filmes" />
+            
+        </Container>
     )
 }
 
